@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_screen_text_size">36dp</dimen>
+    <dimen name="main_screen_padding_icon_text">8dp</dimen>
+    <dimen name="phone_book_text_size">20sp</dimen>
+    <dimen name="edit_text_corners">5dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="phone_book_widgets_text_size">14sp</dimen>
+</resources>

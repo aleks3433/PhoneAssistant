@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Phone Assistant</string>
+    <string name="phone_book">Phone Book</string>
+    <string name="my_events">My Events</string>
+    <string name="my_day_book">My Day Book</string>
+    <string name="add">ADD</string>
+    <string name="review">REVIEW</string>
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="country">Country:</string>
+    <string name="phone_number">Phone:</string>
+    <string name="photo">Photo:</string>
+    <string name="button_load">Load</string>
+    <string name="button_make">Make</string>
+
+    <array name="countries">
+        <item>Ukraine</item>
+        <item>Russia</item>
+        <item>Belarus</item>
+    </array>
+</resources>

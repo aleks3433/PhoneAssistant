@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/phone_book_text_size"/>
+
+        <EditText
+            android:layout_weight="7"
+            android:id="@+id/name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/phone_book_text_size"
+            android:theme="@style/EditTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/phone_book_text_size"/>
+
+        <EditText
+            android:layout_weight="7"
+            android:id="@+id/surname_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/phone_book_text_size"
+            android:theme="@style/EditTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textColor="@color/black"
+            android:textSize="@dimen/phone_book_text_size"/>
+
+        <com.hbb20.CountryCodePicker
+            app:textSize="@dimen/phone_book_widgets_text_size"
+            app:showFullName="true"
+            app:defaultNameCode="UA"
+            app:contentColor="@color/black"
+            android:layout_weight="7"
+            android:id="@+id/country_code_picker"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:theme="@style/EditTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/phone_book_text_size"/>
+
+        <EditText
+            android:layout_weight="7"
+            android:id="@+id/phone_number_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/phone_book_text_size"
+            android:theme="@style/EditTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/photo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/phone_book_text_size"/>
+
+        <Button
+            android:textSize="@dimen/phone_book_widgets_text_size"
+            android:background="@drawable/phone_book_buttons_style"
+            android:textColor="@color/white"
+            android:text="@string/button_load"
+            android:layout_weight="3"
+            android:id="@+id/load_photo_button"
+            android:layout_width="0dp"
+            android:layout_height="36dp" />
+
+        <Button
+            android:textSize="@dimen/phone_book_widgets_text_size"
+            android:background="@drawable/phone_book_buttons_style"
+            android:textColor="@color/white"
+            android:text="@string/button_make"
+            android:layout_weight="3"
+            android:id="@+id/make_photo_button"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/main_screen_padding_icon_text"
+            android:layout_marginStart="@dimen/main_screen_padding_icon_text"/>
+    </LinearLayout>
+
+
+</LinearLayout>
