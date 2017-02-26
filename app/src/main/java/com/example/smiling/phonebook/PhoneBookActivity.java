@@ -12,10 +12,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.EditText;
 
 
-import com.hbb20.CountryCodePicker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,9 +24,6 @@ public class PhoneBookActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    CountryCodePicker ccp;
-    String countryCode;
-    EditText phoneNumberEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +47,6 @@ public class PhoneBookActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        ccp = (CountryCodePicker) findViewById(R.id.country_code_picker);
-        phoneNumberEditText = (EditText) findViewById(R.id.phone_number_edit_text);
-        ccp.setOnCountryChangeListener(new CountryCodePicker.OnCountryChangeListener() {
-            @Override
-            public void onCountrySelected() {
-                countryCode = ccp.getSelectedCountryCode();
-                phoneNumberEditText.setText(countryCode);
-            }
-        });
     }
 
 
@@ -86,7 +72,7 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
     private final List<Fragment> mFragmentList = new ArrayList<>();
     private final List<String> mFragmentTitleList = new ArrayList<>();
 
-    public ViewPagerAdapter(FragmentManager manager) {
+    ViewPagerAdapter(FragmentManager manager) {
         super(manager);
     }
 
@@ -100,7 +86,7 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
         return mFragmentList.size();
     }
 
-    public void addFragment(Fragment fragment, String title) {
+    void addFragment(Fragment fragment, String title) {
         mFragmentList.add(fragment);
         mFragmentTitleList.add(title);
     }

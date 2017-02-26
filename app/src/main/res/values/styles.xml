@@ -27,5 +27,11 @@
         <item name="colorAccent">@color/black</item>
     </style>
 
+    <style name="TabsStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/light_green_500</item>
+    </style>
+
 
 </resources>
